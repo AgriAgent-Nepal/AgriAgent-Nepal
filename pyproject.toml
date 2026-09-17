@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agriagent-nepal"
+version = "0.1.0"
+description = "Chat-based, deterministic multi-agent agronomy advisory reference implementation for Nepal."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Shova Gelal"},
+  {name = "Barosh Manandhar"},
+  {name = "Bishesh Marasini"},
+  {name = "Bhawana Ojha"},
+]
+dependencies = [
+  "fastapi>=0.110,<1",
+  "uvicorn[standard]>=0.27,<1",
+  "pydantic>=2.6,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<9",
+  "httpx>=0.27,<1",
+  "ruff>=0.6,<1",
+]
+
+[project.scripts]
+agriagent = "agriagent.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agriagent*"]
+
+[tool.setuptools.package-data]
+agriagent = ["data/*.json", "static/*.html"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E9", "F"]

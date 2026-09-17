@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AgriAgent Nepal</title>
+  <style>
+    :root { color-scheme: light; --green:#166534; --soft:#f0fdf4; --ink:#17211b; --muted:#64706a; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif; background:#f7faf7; color:var(--ink); }
+    .shell { max-width:900px; margin:0 auto; min-height:100vh; display:flex; flex-direction:column; padding:24px; }
+    header { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; margin-bottom:18px; }
+    h1 { margin:0; font-size:28px; }
+    .sub { color:var(--muted); margin-top:6px; max-width:650px; line-height:1.45; }
+    .pill { background:var(--soft); color:var(--green); border:1px solid #bbf7d0; padding:7px 10px; border-radius:999px; font-size:12px; white-space:nowrap; }
+    #chat { flex:1; background:white; border:1px solid #dde7df; border-radius:18px; padding:18px; overflow:auto; min-height:520px; box-shadow:0 10px 30px rgba(22,101,52,.05); }
+    .msg { max-width:82%; padding:12px 14px; border-radius:14px; margin:10px 0; white-space:pre-wrap; line-height:1.5; }
+    .assistant { background:#f2f7f3; border:1px solid #e3eee5; }
+    .user { margin-left:auto; background:var(--green); color:white; }
+    .sources { font-size:12px; color:var(--muted); margin-top:8px; }
+    form { display:flex; gap:10px; margin-top:14px; }
+    textarea { flex:1; resize:none; min-height:54px; max-height:140px; border:1px solid #cfd9d1; border-radius:14px; padding:14px; font:inherit; }
+    button { border:0; border-radius:14px; padding:0 20px; background:var(--green); color:white; font-weight:700; cursor:pointer; }
+    .examples { display:flex; flex-wrap:wrap; gap:8px; margin:14px 0; }
+    .example { border:1px solid #d7e4da; background:white; color:#315c3c; padding:7px 10px; border-radius:999px; cursor:pointer; font-size:12px; }
+    footer { color:var(--muted); font-size:12px; line-height:1.5; padding-top:14px; }
+    @media (max-width:650px) { .shell{padding:14px}.pill{display:none}.msg{max-width:94%}button{padding:0 14px} }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <h1>🌾 AgriAgent Nepal</h1>
+        <div class="sub">Chat-only research demo. Deterministic routing and calculators; English, नेपाली, and romanized Nepali input.</div>
+      </div>
+      <div class="pill">Numbers come from code, not an LLM</div>
+    </header>
+
+    <div class="examples">
+      <button class="example" data-q="Convert 5 ropani to hectare">5 ropani → hectare</button>
+      <button class="example" data-q="100-50-30 kg/ha fertilizer for 2 ropani">NPK scaling</button>
+      <button class="example" data-q="Mero makai ma fauji kira jasto dekhinchha, k herne?">Romanized Nepali</button>
+      <button class="example" data-q="टमाटरको पातमा कालो दाग छ, के हेर्नु पर्छ?">नेपाली</button>
+    </div>
+
+    <section id="chat" aria-live="polite">
+      <div class="msg assistant">Namaste! Ask about a crop problem, Nepal land-unit conversion, or scaling an already-approved N-P2O5-K2O rate to your field.</div>
+    </section>
+
+    <form id="form">
+      <textarea id="input" placeholder="Ask in English, नेपाली, or romanized Nepali…" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <footer>
+      Research/demo software. The bundled knowledge records are illustrative. Production agricultural advice should use curated, versioned, locally approved sources and current registered-product guidance.
+    </footer>
+  </main>
+<script>
+const chat = document.getElementById('chat');
+const form = document.getElementById('form');
+const input = document.getElementById('input');
+function add(text, cls, sources=[]) {
+  const box = document.createElement('div'); box.className = `msg ${cls}`; box.textContent = text;
+  if (sources.length) {
+    const s = document.createElement('div'); s.className='sources';
+    s.textContent = 'Sources: ' + sources.map(x => x.title).join(' · '); box.appendChild(s);
+  }
+  chat.appendChild(box); chat.scrollTop = chat.scrollHeight;
+}
+async function ask(message) {
+  add(message, 'user'); input.value=''; input.focus();
+  try {
+    const r = await fetch('/api/chat', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({message})});
+    const data = await r.json();
+    add(data.answer || 'No response', 'assistant', data.citations || []);
+  } catch (e) { add('The local API is unavailable.', 'assistant'); }
+}
+form.addEventListener('submit', e => { e.preventDefault(); const q=input.value.trim(); if(q) ask(q); });
+input.addEventListener('keydown', e => { if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); form.requestSubmit(); } });
+document.querySelectorAll('.example').forEach(b => b.addEventListener('click', () => ask(b.dataset.q)));
+</script>
+</body>
+</html>

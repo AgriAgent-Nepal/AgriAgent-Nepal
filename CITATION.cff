@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software in academic work, please cite the project and its authors."
+title: "AgriAgent Nepal"
+type: software
+version: 0.1.0
+date-released: 2026-09-17
+abstract: "A chat-based deterministic multi-agent agronomy advisory reference implementation for Nepal."
+authors:
+  - family-names: Gelal
+    given-names: Shova
+    affiliation: "Department of Artificial Intelligence, School of Engineering, Kathmandu University (KU), Dhulikhel, Nepal"
+  - family-names: Manandhar
+    given-names: Barosh
+    affiliation: "Department of Artificial Intelligence, School of Engineering, Kathmandu University (KU), Dhulikhel, Nepal"
+  - family-names: Marasini
+    given-names: Bishesh
+    affiliation: "Department of Artificial Intelligence, School of Engineering, Kathmandu University (KU), Dhulikhel, Nepal"
+  - family-names: Ojha
+    given-names: Bhawana
+    affiliation: "Department of Artificial Intelligence, School of Engineering, Kathmandu University (KU), Dhulikhel, Nepal"
+license: MIT

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "soil-testing-001",
+    "crop": "general",
+    "topic": "soil fertility and fertilizer planning",
+    "source_group": "government",
+    "source_title": "Demo government-extension record",
+    "source_url": "https://moald.gov.np/",
+    "text_en": "Before choosing a fertilizer program, use a recent soil test where available and consider the crop, field history, irrigation, and expected yield. A nutrient recommendation should come from an approved local source; calculators should only scale that recommendation to the farmer's field area.",
+    "text_ne": "मलखाद कार्यक्रम छनोट गर्नु अघि सम्भव भए हालसालैको माटो परीक्षण प्रयोग गर्नुहोस् र बाली, खेतको इतिहास, सिँचाइ तथा अपेक्षित उत्पादनलाई विचार गर्नुहोस्। पोषक तत्त्वको सिफारिस स्वीकृत स्थानीय स्रोतबाट आउनुपर्छ; क्याल्कुलेटरले उक्त सिफारिसलाई किसानको खेतको क्षेत्रफलअनुसार मात्र गणना गर्नुपर्छ।",
+    "text_roman": "Malkhad karyakram chhanot garnu aghi sambhav bhaye mato parikshan, bali, khetko itihas, sinchai ra apekshit utpadan hernu parchha. Posak tatwako sifaris swikrit sthaniya srot bata aaunu parchha; calculator le teslai khetko area anusar matra scale garos.",
+    "tags": ["soil test", "fertility", "fertilizer", "mato parikshan", "माटो परीक्षण"]
+  },
+  {
+    "id": "tomato-blight-001",
+    "crop": "tomato",
+    "topic": "leaf spots and blight prevention",
+    "source_group": "university",
+    "source_title": "Demo university-extension record",
+    "source_url": "https://ku.edu.np/",
+    "text_en": "For rapidly expanding dark leaf lesions in tomato, remove heavily affected plant material, improve airflow, avoid wetting foliage during irrigation, and compare symptoms with a locally validated disease guide. If pesticide treatment is considered, use only products registered for the crop and disease and follow the current label and local extension advice.",
+    "text_ne": "टमाटरमा छिटो फैलिने कालो पातका दाग देखिएमा धेरै संक्रमित भाग हटाउनुहोस्, हावा चल्ने व्यवस्था सुधार गर्नुहोस् र सिँचाइ गर्दा पात भिजाउने काम कम गर्नुहोस्। लक्षणलाई स्थानीय रूपमा प्रमाणित रोग मार्गदर्शिकासँग मिलाउनुहोस्। विषादी आवश्यक परे बाली र रोगका लागि दर्ता भएको उत्पादन मात्र हालको लेबल र स्थानीय कृषि सल्लाहअनुसार प्रयोग गर्नुहोस्।",
+    "text_roman": "Tamatarma chhito failine kalo patko dag dekhiye dherai sankramit bhag hataunu, hawa chalne banaunu ra sinchai garda pat nabhijaunu. Lakshan sthaniya pramanit rog guide sanga milau. Bishadi chahine bhaye bali ra rogko lagi darta bhayeko product matra label ra sthaniya salah anusar prayog garnu.",
+    "tags": ["tomato", "blight", "leaf spot", "tamatar", "टमाटर", "डढुवा"]
+  },
+  {
+    "id": "maize-faw-001",
+    "crop": "maize",
+    "topic": "fall armyworm scouting",
+    "source_group": "extension",
+    "source_title": "Demo extension record",
+    "source_url": "https://narc.gov.np/",
+    "text_en": "For suspected fall armyworm in maize, inspect the whorl and nearby leaves for fresh feeding damage, frass, egg masses, and larvae. On small plots, early scouting and removal of egg masses can reduce pressure. Preserve beneficial insects and use locally registered control options only when justified by field scouting and official guidance.",
+    "text_ne": "मकैमा फौजी किरा शंका भए गुभो र वरिपरिका पातमा नयाँ खाएको चिन्ह, विष्टा, अण्डाको समूह र लार्भा हेर्नुहोस्। सानो खेतमा प्रारम्भिक निगरानी र अण्डाको समूह हटाउँदा दबाब घट्न सक्छ। उपयोगी किरालाई जोगाउनुहोस् र खेतको निगरानी तथा आधिकारिक सल्लाहले आवश्यक ठहर गरेमा मात्र स्थानीय रूपमा दर्ता भएका नियन्त्रण उपाय प्रयोग गर्नुहोस्।",
+    "text_roman": "Makaima fauji kira sanka bhaye gubho ra wariparika patma naya khayeko chin, frass, andako samuha ra larva hernu. Sano khetma chhito scouting ra egg mass hatauda pressure ghatna sakchha. Upayogi kira jogaunu ra official salah anusar darta bhayeko control matra prayog garnu.",
+    "tags": ["maize", "fall armyworm", "faw", "makai", "मकै", "फौजी किरा"]
+  },
+  {
+    "id": "rice-water-001",
+    "crop": "rice",
+    "topic": "water management",
+    "source_group": "government",
+    "source_title": "Demo rice management record",
+    "source_url": "https://moald.gov.np/",
+    "text_en": "Rice water management should respond to crop stage, soil, rainfall, and field drainage. Avoid treating every field identically. Check soil moisture and field conditions before irrigation, and keep drainage paths functional so heavy rain does not leave the crop under prolonged uncontrolled flooding.",
+    "text_ne": "धानको पानी व्यवस्थापन बालीको अवस्था, माटो, वर्षा र निकासअनुसार फरक हुनुपर्छ। सबै खेतलाई एउटै तरिकाले व्यवस्थापन नगर्नुहोस्। सिँचाइ अघि माटोको चिस्यान र खेतको अवस्था जाँच गर्नुहोस् र ठूलो वर्षापछि लामो समय अनियन्त्रित डुबान नहोस् भनेर निकास खुला राख्नुहोस्।",
+    "text_roman": "Dhanko pani byabasthapan bali ko stage, mato, barsa ra nikas anusar farak hunu parchha. Sabai khetlai eutai tarikale nagarnu. Sinchai aghi matoko chiso ra khetko awastha hernu, ra thulo barsa pachi pani jamna nadina nikas khulla rakhnu.",
+    "tags": ["rice", "irrigation", "water", "dhan", "dhaan", "धान", "सिँचाइ"]
+  },
+  {
+    "id": "yellow-leaves-001",
+    "crop": "general",
+    "topic": "yellow leaves triage",
+    "source_group": "university",
+    "source_title": "Demo crop-symptom triage record",
+    "source_url": "https://ku.edu.np/",
+    "text_en": "Yellow leaves are not specific to one cause. Check whether yellowing starts on old or young leaves, whether the pattern is uniform or patchy, and whether roots are waterlogged, dry, damaged, or diseased. Also inspect for pests and compare with soil-test information before concluding that the problem is a nutrient deficiency.",
+    "text_ne": "पात पहेँलो हुनु एउटै कारणको निश्चित लक्षण होइन। पहेँलो हुने क्रम पुराना वा नयाँ पातबाट सुरु भएको हो कि, समान रूपमा वा थोप्ला-थोप्लामा छ कि, र जरा पानीले डुबेको, सुक्खा, क्षतिग्रस्त वा रोगी छ कि जाँच गर्नुहोस्। किराको पनि निरीक्षण गर्नुहोस् र पोषक तत्त्वको कमी निष्कर्ष निकाल्नु अघि माटो परीक्षणसँग तुलना गर्नुहोस्।",
+    "text_roman": "Pat pahelo hunu euta matra karanko nischit lakshan hoina. Purano ki naya pat bata suru bhayo, sabai thau ma eutai cha ki patchy cha, ra jara dube ko, sukeko, damage wa rogi cha ki hernu. Kira pani hernu ra nutrient deficiency bhannu aghi soil test sanga tulana garnu.",
+    "tags": ["yellow leaves", "chlorosis", "nutrient", "pahelo pat", "पहेँलो पात"]
+  },
+  {
+    "id": "seedling-damping-001",
+    "crop": "vegetables",
+    "topic": "seedling damping off prevention",
+    "source_group": "extension",
+    "source_title": "Demo nursery health record",
+    "source_url": "https://narc.gov.np/",
+    "text_en": "Seedling collapse near the soil line can be associated with damping-off organisms and overly wet nursery conditions. Use clean trays or beds, well-drained growing media, appropriate spacing, and careful watering. Remove badly affected seedlings and avoid moving contaminated media between nursery batches.",
+    "text_ne": "माटोको सतह नजिकै बिरुवा ढल्नु ड्याम्पिङ-अफ रोगकारक र अत्यधिक भिजेको नर्सरी अवस्थासँग सम्बन्धित हुन सक्छ। सफा ट्रे वा बेड, राम्रो निकास भएको माध्यम, उचित दूरी र सावधानीपूर्वक पानी प्रयोग गर्नुहोस्। धेरै प्रभावित बिरुवा हटाउनुहोस् र दूषित माध्यमलाई अर्को नर्सरी ब्याचमा नसार्नुहोस्।",
+    "text_roman": "Matoko satah najikai biruwa dhalnu damping-off organism ra dherai bhijeko nursery sanga sambandhit huna sakchha. Safa tray/bed, ramro drainage, thik spacing ra careful watering garnu. Dherai affected seedling hataunu ra contaminated media arko batchma nasarnu.",
+    "tags": ["nursery", "seedling", "damping off", "बेर्ना", "नर्सरी"]
+  }
+]

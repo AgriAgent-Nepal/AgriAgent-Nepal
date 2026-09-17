@@ -1,0 +1,14 @@
+[
+  {"text":"Convert 5 ropani to hectare","intent":"area_conversion"},
+  {"text":"2 bigha in hectare","intent":"area_conversion"},
+  {"text":"15 kattha to ropani","intent":"area_conversion"},
+  {"text":"100-50-30 kg/ha fertilizer for 2 ropani","intent":"fertilizer_calculation"},
+  {"text":"80-40-20 kg/ha khad 4 kattha ko lagi","intent":"fertilizer_calculation"},
+  {"text":"टमाटरको पातमा कालो दाग छ","intent":"agronomy_query"},
+  {"text":"धानमा पानी कहिले दिने?","intent":"agronomy_query"},
+  {"text":"Mero makai ma fauji kira jasto cha","intent":"agronomy_query"},
+  {"text":"pat pahelo bhayo, k herne?","intent":"agronomy_query"},
+  {"text":"hello","intent":"greeting"},
+  {"text":"namaste","intent":"greeting"},
+  {"text":"help","intent":"help"}
+]
